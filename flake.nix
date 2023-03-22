@@ -27,7 +27,7 @@
         Morpheus = let
           system = "x86_64-linux";
           pkgs = nixpkgs.legacyPackages.${system};
-        in my.lib.mkHost (import ./hosts/Morpheus/configuration.nix { inherit system pkgs; });
+        in my.lib.mkHost (import ./hosts/Morpheus/configuration.nix { inherit input lib system pkgs; });
 
         qinghe = let
           system = "x86_64-linux";
