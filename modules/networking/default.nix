@@ -25,6 +25,7 @@ in {
       enable = mkDefault true;
       settings = { PasswordAuthentication = mkDefault true; };
       #passwordAuthentication = mkDefault false;
+      settings = { PermitRootLogin = mkDefault true; };
     };
     environment.etc = mkMerge (mapAttrsToList (name: pwd: {
       "NetworkManager/system-connections/${name}.nmconnection" = {
