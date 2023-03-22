@@ -52,7 +52,7 @@
       # also update host name in $REPO/flake.nix
       # and update import path to $REPO/hosts/myHostName
       hostName = "Morpheus";
-      timeZone = "Europe/Berlin";
+      timeZone = "America/New_York";
       wirelessNetworks = { "MI6" = "Quickstreet007!"; };
     };
 
