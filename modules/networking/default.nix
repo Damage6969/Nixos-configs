@@ -23,7 +23,7 @@ in {
   config = {
     services.openssh = {
       enable = mkDefault true;
-      settings = { PasswordAuthentication = mkDefault false; };
+      settings = { PasswordAuthentication = mkDefault true; };
       #passwordAuthentication = mkDefault false;
     };
     environment.etc = mkMerge (mapAttrsToList (name: pwd: {
